@@ -29,7 +29,7 @@ public class AuthenticationService {
     private final ITokenRepository tokenRepository;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
-    private final JwtService jwtService;
+    private final JwtService jwtService; //
 
     public UserModel signup(RegisterUserModel model) {
         var user = UserMapper.toEntity(model, passwordEncoder);
